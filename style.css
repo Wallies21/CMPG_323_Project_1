@@ -307,7 +307,8 @@ p{
 .ui-design {width: 25%; background-color:turquoise;}
 
 /*Portfilio*/
-* {
+
+/* {
   box-sizing: border-box;
 }
 .port-head{
@@ -348,7 +349,58 @@ p{
   padding: 1rem;
   text-align: center;
   background-color: lightsalmon;
+}*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6.5%;
+  padding-top: 220px;
 }
 
+.link-container{
+  background-color: transparent;
+  width: 1400px;
+  height: 175px;
+  perspective: 1000px;
+  
+  
+}
+.card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front {
+  border-radius: 25%;
+  background-color: #bbb;
+  color: black;
+}
+.back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 25%;
+}
+.back p{
+  font-family: "Architects Daughter";
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
 /*Experience*/
 /*Contact*/
