@@ -173,7 +173,7 @@ section{
   padding: 25px;
   font-family: "Architects Daughter";
   color: white;
-  background-color:  teal;
+  background-color: rgba(40,40,40,.65);
     
 }
 
@@ -194,7 +194,48 @@ section{
   border-radius: 50%;
   
 }
+/*Social*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
 /*Skills*/
 
 .grid-container{
@@ -259,9 +300,17 @@ p{
 .column {
   float: left;
   width: 25%;
+  
   padding: 5px;
 }
-.row {margin: 0 -5px;}
+.row1 {
+  margin: 0 -5px;
+  
+}
+.row2 {
+  margin: 0 -5px;
+  
+}
 
 .row:after {
   content: "";
@@ -279,7 +328,7 @@ p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: lightsalmon;
 }
 
 /*Experience*/
