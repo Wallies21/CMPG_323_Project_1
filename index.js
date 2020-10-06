@@ -31,7 +31,7 @@ function DoYouTubebApi() {
     .then((json) => {
       json.items.map((item) => {
         container.innerHTML += 
-        `<a href=${"https://www.youtube.com/watch?v=" + item.id.videoId}>${item.snippet.title}</a>`
+        `<a href=${"https://www.youtube.com/watch?v="  + item.id.videoId}  >${item.snippet.title}</a>`
         ;
       });
     });
