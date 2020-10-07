@@ -28,9 +28,10 @@ html, body{
   background-size: cover;
 }
 a{
-  color: lightsalmon;
+  color: hotpink;
   justify-content: center;
   font-size: 1.5em;
+  text-decoration: none;
 }
 
 h1{
@@ -96,7 +97,7 @@ h1{
   text-align: center;
   border: none;
     
-  background: turquoise;
+  background: linear-gradient(145deg, green,purple);
   color: white;
   padding: 12px 50px;
   border-radius: 20px;
@@ -358,6 +359,7 @@ p{
   width: 100%;
   height: auto;
   
+  
 }
 .front > img {
   width: 175px;
@@ -409,9 +411,10 @@ table{
   font-family: "Architects Daughter";
   border-collapse: collapse;
   width: 100%;
-  font-weight: bold;
   border-collapse:separate; 
   border-spacing:15px 15px;
+  color: black;
+  font-size: 1.2em;
 }
 td{
   text-align: center;
@@ -465,7 +468,7 @@ textarea.contact-text{
 .contact-btn{
   float: right;
   border: 0;
-  background: turquoise;
+  background: linear-gradient(145deg, pink,blue);
   color: white;
   padding: 12px 50px;
   border-radius: 20px;
@@ -475,5 +478,16 @@ textarea.contact-text{
   font-size: 1em;
 }
 .contact-btn:hover{
-  background: purple;
+  background: linear-gradient(145deg, black,white);
+}
+
+#goToTopButton{
+  font-family: "Architects Daughter";
+  background: linear-gradient(145deg, green,purple);
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  float: right;
+  font-size: 1em;
+  border: 0;
 }
