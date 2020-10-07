@@ -215,12 +215,12 @@ section{
 }
 /*Social*/
 .fa {
-  padding: 1.25rem;
-  font-size: 4.375rem;
-  width: 3.75rem;
+  padding: 20px;
+  font-size: 70px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 0.3125rem 0.3125rem;
+  margin: 5px 5px;
   border-radius: 50%;
 }
 
@@ -233,11 +233,11 @@ section{
   color: white;
 }
 .fa-twitter {
-  background: lightblue;
+  background: rgb(100, 200, 233);
   color: white;
 }
 .fa-linkedin {
-  background:darkcyan;
+  background: rgb(72, 97, 207);
   color: white;
 }
 
@@ -247,19 +247,19 @@ section{
 }
 
 .fa-instagram {
-  background: rgb(255, 0, 179);
+  background: rgb(243, 46, 184);
   color: rgb(255, 255, 255);
 }
 
 .fa-pinterest {
-  background: maroon;
+  background: rgb(207, 30, 30);
   color: white;
 }
 /*Skills*/
 
 .grid-container{
   display: grid;
-  grid-gap: 0.0625rem;
+  grid-gap: 1px;
 }
 .grid1{
   grid-column: 1 / span 1;
@@ -275,35 +275,36 @@ section{
 }
 .skill-sections{
   font-family: "Architects Daughter";
+  color: white;
 }
 p{
   margin: auto;
 }
 .p2{
-  margin: 1.5625rem;
+  margin: 25px;
 }
 .skill-container{
   width: 85%;
-  background-color: white;
+  background-color: darkgrey;
 }
 .skills {
   text-align: right;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  color: darkgrey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
 }
-.excel {width: 75%; background-color:turquoise;}
-.word {width: 75%; background-color:turquoise;}
-.powerpoint {width: 75%; background-color:turquoise;}
-.c-sharp {width: 50%; background-color:turquoise;}
-.cplusplus {width: 50%; background-color:turquoise;}
-.java {width: 50%; background-color:turquoise;}
-.html {width: 50%; background-color:turquoise;}
-.css {width: 50%; background-color:turquoise;}
-.eng {width: 75%; background-color:turquoise;}
-.afr {width: 75%; background-color:turquoise;}
-.blender {width: 25%; background-color:turquoise;}
-.scetch {width: 75%; background-color:turquoise;}
+.excel {width: 75%; background-color:green;}
+.word {width: 75%; background-color:blue;}
+.powerpoint {width: 75%; background-color:red;}
+.c-sharp {width: 50%; background-color:purple;}
+.cplusplus {width: 50%; background-color:maroon;}
+.java {width: 50%; background-color:yellow;}
+.html {width: 50%; background-color:mediumslateblue;}
+.css {width: 50%; background-color:palevioletred;}
+.eng {width: 75%; background-color:lightgreen;}
+.afr {width: 75%; background-color:salmon;}
+.blender {width: 25%; background-color:orangered;}
+.scetch {width: 75%; background-color:violet;}
 .ui-design {width: 25%; background-color:turquoise;}
 
 /*Portfilio*/
@@ -340,11 +341,11 @@ p{
 }
 .front {
   border-radius: 25%;
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 .back {
-  background-color: #2980b9;
+  background-color: white;
   color: white;
   transform: rotateY(180deg);
   border-radius: 25%;
@@ -356,5 +357,6 @@ p{
   font-size: 12px;
   text-align: center;
 }
+
 /*Experience*/
 /*Contact*/
