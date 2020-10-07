@@ -360,3 +360,52 @@ p{
 
 /*Experience*/
 /*Contact*/
+
+.border{
+  width: 100px;
+  height: 10px;
+  background: turquoise;
+  margin: 10px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: black;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.contact-text:focus{
+  box-shadow: 0 0 10px 4px turquoise;
+}
+
+textarea.contact-text{
+  resize: none;
+  height: 120px;
+}
+.contact-btn{
+  float: right;
+  border: 0;
+  background: turquoise;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-btn:hover{
+  background: purple;
+}
