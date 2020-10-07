@@ -309,7 +309,14 @@ p{
 
 /*Portfilio*/
 
-
+.port-grid{
+  display: grid;
+  grid-row: span;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
+}
 .link-container{
   display: flex;
   background-color: transparent;
@@ -363,7 +370,7 @@ p{
 
 .border{
   width: 100px;
-  height: 10px;
+  height: 5px;
   background: turquoise;
   margin: 10px auto;
 }
