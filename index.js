@@ -36,3 +36,20 @@ function DoYouTubebApi() {
       });
     });
 }
+var goToTop = document.getElementById("goToTopButton");
+
+window.onscroll = function() {scrollToHome()};
+
+function scrollToHome() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    goToTop.style.display = "block";
+  } else {
+    goToTop.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
