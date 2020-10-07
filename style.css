@@ -11,6 +11,9 @@ html, body{
   padding: 0;
   scroll-behavior: smooth;
 }
+* {
+  box-sizing: border-box;
+}
 .parallax {
   /* The image used */
   background-image: url("Images/city-landscape-1.jpg");
@@ -23,6 +26,10 @@ html, body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+a{
+  color: hotpink;
+  justify-content: center;
 }
 
 h1{
@@ -83,20 +90,18 @@ h1{
 }
 
 .view-button {
-  font-size: 1rem;
   font-family: "Architects Daughter";
-  padding: 1rem;
-  width: 10rem;
+  
   text-align: center;
   border: none;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  /*background-color: transparent;*/
-  opacity: 0.5;
-  color: black;
-  font-weight: bold;
     
-    
+  background: turquoise;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 20rem;
 }
 button:hover{
   cursor: pointer;
@@ -172,7 +177,7 @@ section{
   padding: 1.5625rem;
   font-family: "Architects Daughter";
   color: white;
-  background-color: rgba(40,40,40,.65);
+  background-color: rgba(40,40,40,.60);
   margin-top: 1.25rem;
 }
 
@@ -309,11 +314,6 @@ p{
 
 /*Portfilio*/
 
-.port-grid{
-  display: grid;
-  justify-content: space-evenly;
-  gap: 1px;
-}
 
 #item1{
   grid-column-start: 1;
@@ -333,16 +333,35 @@ p{
   grid-column-end: 4;
 
 }
-.link-container{
-  display: flex;
-  background-color: transparent;
+#item5{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#item6{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+#item7{
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+#item8{
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+.group1,.group2{
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.front > img {
   width: 175px;
   height: 175px;
-  perspective: 1000px;
-  flex-wrap: wrap;
-  
-  
-}
+  border-radius: 20%;
+  }
 .card{
   position: relative;
   width: 100%;
@@ -375,13 +394,27 @@ p{
 }
 .back p{
   font-family: "Architects Daughter";
-  padding: 30px;
-  font-weight: normal;
-  font-size: 12px;
-  text-align: center;
+  padding: 50px;
 }
 
 /*Experience*/
+
+table{
+  font-family: "Architects Daughter";
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+}
+td{
+  border: 1px solid slategray;
+  text-align: center;
+  padding: 8px;
+  
+}
+tr{
+  background-color: silver;
+}
+
 /*Contact*/
 
 .border{
