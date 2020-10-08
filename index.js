@@ -1,9 +1,11 @@
-//on website load
+//API's
+
 window.onload = OnWebsiteLoad;
 
 function OnWebsiteLoad() {
   DoGithubApi();
   DoYouTubebApi();
+  DoSteamApi();
 }
 
 function DoGithubApi() {
@@ -31,12 +33,31 @@ function DoYouTubebApi() {
     .then((json) => {
       json.items.map((item) => {
         container.innerHTML += 
-        `<a href=${"https://www.youtube.com/watch?v="  + item.id.videoId} target="_blank" > ${item.snippet.title}</a>`
+        `<a href=${"https://www.youtube.com/watch?v="  + item.id.videoId} > ${item.snippet.title}</a>`
         ;
       });
     });
 }
-//preloader
+
+function DoSteamApi() {
+  const container = document.getElementById("steam");
+  const url = 
+    "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=271590&count=3&maxlength=300&format=json";
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((json) => {
+      json.appnews.newsitems.map((item) => {
+        container.innerHTML += 
+        `<a href="${item.url}" class="steam_con" target="_blank"><div class="steam_cont">${item.title}</div></a>`
+        ;
+      });
+    });
+}
+
+//Loader
+
+
 //var preloader = document.getElementById('loader');
 //function loadFunction(){
   //preloader.style.display = 'none';
@@ -52,7 +73,7 @@ $(document).ready(function() {
   });
 
 
-//topbutton
+//Scroll To Top Button
 
 
 var goToTop = document.getElementById("goToTopButton");
