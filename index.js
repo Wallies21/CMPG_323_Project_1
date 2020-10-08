@@ -36,12 +36,23 @@ function DoYouTubebApi() {
       });
     });
 }
+//preloader
+//var preloader = document.getElementById('loader');
+//function loadFunction(){
+  //preloader.style.display = 'none';
+//}
+
+$(document).ready(function() {
+  //Preloader
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {var preloader = $('.spinner-wrapper');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
 
 
-
-
-
-
+//topbutton
 
 
 var goToTop = document.getElementById("goToTopButton");
