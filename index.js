@@ -36,6 +36,14 @@ function DoYouTubebApi() {
       });
     });
 }
+
+
+
+
+
+
+
+
 var goToTop = document.getElementById("goToTopButton");
 
 window.onscroll = function() {scrollToHome()};
