@@ -7,7 +7,7 @@ function OnWebsiteLoad() {
   DoYouTubebApi();
   DoSteamApi();
 }
-
+//GitHub
 function DoGithubApi() {
   const container = document.getElementById("github");
   const url =
@@ -23,6 +23,7 @@ function DoGithubApi() {
       });
     });
 }
+//YouTube
 function DoYouTubebApi() {
   const container = document.getElementById("youtube");
   const url = 
@@ -38,7 +39,7 @@ function DoYouTubebApi() {
       });
     });
 }
-
+//Steam
 function DoSteamApi() {
   const container = document.getElementById("steam");
   const url = 
@@ -55,26 +56,8 @@ function DoSteamApi() {
     });
 }
 
-//Loader
-
-
-//var preloader = document.getElementById('loader');
-//function loadFunction(){
-  //preloader.style.display = 'none';
-//}
-
-$(document).ready(function() {
-  //Preloader
-  preloaderFadeOutTime = 500;
-  function hidePreloader() {var preloader = $('.spinner-wrapper');
-  preloader.fadeOut(preloaderFadeOutTime);
-  }
-  hidePreloader();
-  });
-
 
 //Scroll To Top Button
-
 
 var goToTop = document.getElementById("goToTopButton");
 
